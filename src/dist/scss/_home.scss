@@ -1,0 +1,43 @@
+.cardList {
+    position: absolute;
+    top: 30%;
+    @include center-horizantally;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.card {
+    background: $extra-color;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0 $secondary-color;
+    width: 16rem;
+    transition: transform 0.3s;
+    text-align: center;
+    color: $primary-color;
+
+    &:hover {
+        transform: translateY(0.5rem);
+        box-shadow: 0.25rem 0.25rem 0.5rem $secondary-color;
+    }
+
+    img {
+        width: 70%;
+        margin: 1rem auto;
+        border: 2px solid $secondary-color;
+        border-radius: 0.5rem;
+        height: 10rem;
+    }
+
+    button {
+        font-family: 'Press Start 2P', cursive;
+        margin: 1rem auto;
+        padding: 1rem;
+        cursor: pointer;
+        background: $primary-color;
+        color: $text-color;
+    }
+}

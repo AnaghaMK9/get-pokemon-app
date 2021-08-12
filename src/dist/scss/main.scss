@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import "./config";
+@import "./resets";
+@import "./header";
+@import "./search";
+@import "./home";
+@import "./profile";
+@import "./responsive";
+
+body {
+    background: #000;
+    height: 100vh;
+    line-height: 1;
+    font-family: 'Press Start 2P', cursive;
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+}
+
+.loading {
+    display: block;
+    width: 10rem;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    @include center-horizantally;
+}

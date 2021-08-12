@@ -1,0 +1,154 @@
+@include media-md {
+  .cardList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.8rem;
+  }
+
+  .card {
+    width: 14rem;
+  }
+
+  .search {
+    input {
+      font-size: 1rem;
+    }
+  }
+  .profile {
+    width: 70vw;
+    top: 15%;
+
+    &__image {
+      img {
+        height: 50vh;
+        width: 30vw;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    &__stats {
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .notfound {
+    width: 80vw;
+    line-height: 2rem;
+  }
+}
+
+@include media-sm {
+  .cardList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .profile {
+    width: 80vw;
+    padding: 0.5rem;
+    flex-direction: column;
+    box-shadow: 0.2rem 0.2rem 0 $secondary-color;
+    &__image {
+      img {
+        height: 40vh;
+        width: 60vw;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    &__stats {
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .search {
+    width: 85vw;
+    input {
+      font-size: 1rem;
+    }
+  }
+
+  .notfound {
+    width: 19rem;
+    box-shadow: 0.25rem 0.25rem 0 $secondary-color;
+  }
+}
+
+@include media-xs {
+  .cardList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .search {
+    width: 90vw;
+
+    input {
+      font-size: 0.9rem;
+    }
+  }
+
+  .profile {
+    flex-direction: column;
+    width: 80vw;
+    box-shadow: 0.2rem 0.2rem 0 $secondary-color;
+
+    &__image {
+      img {
+        height: 50vh;
+        width: 60vw;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    &__stats {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .notfound {
+    width: 15rem;
+    font-size: 0.8rem;
+    box-shadow: 0.25rem 0.25rem 0 $secondary-color;
+    line-height: 1rem;
+  }
+}
+
+@include media-lg {
+  .cardList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .profile {
+    width: 70vw;
+    &__image {
+      padding: 1rem;
+      img {
+        width: 20vw;
+        height: 40vh;
+      }
+    }
+
+    &__stats {
+      width: 40vw;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .notfound {
+    width: 70vw;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}

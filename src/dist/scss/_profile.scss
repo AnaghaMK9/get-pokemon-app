@@ -1,0 +1,49 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55vw;
+  position: absolute;
+  top: 12%;
+  @include center-horizantally;
+  margin: 0 auto;
+  background: $extra-color;
+  padding: 1rem;
+  box-shadow:  1rem 1rem 0 $secondary-color;
+  border-radius: 0.5rem;
+
+  &__image {
+      text-align: center;
+    img {
+      height: 70vh;
+      width: 30vw;
+      border-radius: 0.5rem;
+      border: 5px solid $secondary-color;
+    }
+    h2 {
+        padding: 1rem;
+    }
+  }
+
+  &__stats {
+      text-align: left;
+
+      p {
+          padding: 0.5rem;
+          font-size: 1rem;
+          line-height: 1rem;
+      }
+  }
+}
+
+.notfound {
+  position: absolute;
+  top: 30%;
+  width: 40vw;
+  @include center-horizantally;
+  background: $extra-color;
+  box-shadow:  1rem 1rem 0 $secondary-color;
+  color: $primary-color;
+  padding: 5rem;
+  border-radius: 0.5rem;
+}

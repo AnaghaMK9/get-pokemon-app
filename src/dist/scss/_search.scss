@@ -1,0 +1,41 @@
+.search {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  background: $primary-color;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: $text-color;
+  box-shadow: 0.25rem 0.25rem 0 $accent-color;
+  position: absolute;
+  top: 20%;
+  @include center-horizantally;
+
+  button {
+    font-size: 1.5rem;
+    background: $primary-color;
+    color: $text-color;
+    border: none;
+    outline: none;
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  
+
+  input {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: $primary-color;
+    color: $text-color;
+
+    ::placeholder {
+        color: $accent-color;
+    }
+  }
+}
